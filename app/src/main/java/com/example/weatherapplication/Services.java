@@ -15,7 +15,7 @@ import org.json.JSONObject;
 public class Services {
 
     public static void getWeather(final GetInformation getInformation, Context context, String city_name){
-        String SERVER = "http://api.openweathermap.org/data/2.5/weather?q="+city_name+"&APPID=d61d32025b9f5c1b3447bbade2773d65";
+        String SERVER = "http://api.openweathermap.org/data/2.5/weather?q="+city_name+"&APPID=<APP_KEY>";
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, SERVER, null, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
